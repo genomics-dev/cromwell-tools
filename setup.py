@@ -14,9 +14,9 @@ CLASSIFIERS = [
 install_requires = [
     'requests>=2.20.0,<3',
     'six>=1.11.0',
-    'google-auth>=1.6.1,<2',
+    'google-auth>=2.38.0',
     'setuptools_scm>=3.1.0,<4',
-    'google-api-python-client>=1.7,<2',
+    'google-api-python-client>=2.161.0',
     'python-dateutil>=2.8,<3',
 ]
 
@@ -34,9 +34,9 @@ extras_require = {
 }
 
 setup(
-    name='cromwell-tools',
+    name='cromwell-tools-genomics',
     use_scm_version=True,
-    setup_requires=['setuptools_scm'],
+    setup_requires=['setuptools_scm', 'setuptools'],
     description='Utilities for interacting with the Cromwell workflow engine',
     classifiers=CLASSIFIERS,
     url='http://github.com/broadinstitute/cromwell-tools',
