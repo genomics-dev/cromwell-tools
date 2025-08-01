@@ -178,7 +178,7 @@ If you really want to manually trigger the linters and formatters on your code, 
 
 Dependencies
 ------------
-When upgrading the dependencies of cromwell-tools, please make sure ``requirements.txt``, ``requirements-test.txt`` and ``setup.py`` are consistent!
+When upgrading the dependencies of cromwell-tools, please make sure ``requirements.txt``, ``requirements-test.txt`` and ``pyproject.toml`` are consistent!
 
 Documentation
 -------------
@@ -198,8 +198,8 @@ Publish on PyPI
 To publish a new version of Cromwell-tools on PyPI:
 
 1. Make sure you have an empty ``dist`` folder locally.
-2. Make sure you have ``twine`` installed: ``pip install twine``.
-3. Build the package: ``python setup.py sdist bdist_wheel``
+2. Make sure you have ``build`` and ``twine`` installed: ``pip install build twine``.
+3. Build the package: ``python -m build``
 4. Upload and publish on PyPI: ``twine upload dist/* --verbose``, note you will need the username and password of the development account to finish this step.
 
 

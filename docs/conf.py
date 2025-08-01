@@ -15,7 +15,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-from pkg_resources import get_distribution
+from importlib.metadata import version as get_version
 
 
 # -- Project information -----------------------------------------------------
@@ -27,7 +27,7 @@ author = 'Mint Team'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = get_distribution('cromwell_tools').version
+release = get_version('cromwell-tools-genomics')
 
 
 # -- General configuration ---------------------------------------------------
